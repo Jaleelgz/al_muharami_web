@@ -2,6 +2,7 @@ import { ThemeProvider } from "@mui/material";
 import { theme } from "../utils/theme";
 import createEmotionCache from "../utils/createEmotionCache";
 import { CacheProvider } from "@emotion/react";
+import "../styles/globals.css";
 
 const clientSideEmotionCache = createEmotionCache();
 
