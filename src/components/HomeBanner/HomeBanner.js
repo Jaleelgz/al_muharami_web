@@ -1,7 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
 import { colors } from "../../../constatnts/Colors/colors";
-import styles from "./HomeBannerStyles.css";
 import { makeStyles } from "@mui/styles";
 import { Images } from "../../../constatnts/Images/images";
 
@@ -29,12 +28,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   bannerContent: {
-    // position: "absolute",
-    // top: "50%",
-    // left: "50%",
-    // transform: "translate(-50%, -50%)",
     zIndex: 15,
-    /* Your banner content styles here */
   },
   bannerContentHover: {
     position: "absolute",
@@ -43,7 +37,6 @@ const useStyles = makeStyles((theme) => ({
     height: "100vh",
     width: "100vw",
     backgroundColor: "rgba(0,0,0,0.1)",
-    // zIndex: 10,
     boxSizing: "border-box",
   },
 }));
@@ -57,7 +50,6 @@ const HomeBanner = () => {
         <Box
           sx={{
             padding: "15px 5vw",
-            // backgroundColor: "rgba(255,255,255,0.5)",
             zIndex: 15,
             position: "fixed",
             top: 0,
@@ -69,7 +61,7 @@ const HomeBanner = () => {
           }}
         >
           <Typography style={{ color: "#fff" }}>Al-muharami</Typography>
-          {/* <Typography style={{ color: "#fff" }}>Al-muharami</Typography> */}
+
           <Box
             sx={{
               display: "flex",
